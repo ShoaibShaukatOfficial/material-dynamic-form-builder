@@ -1,0 +1,12 @@
+<div style="text-align:center;height: 100vh;">
+<form class="example-form" >
+
+<h1> Simple Quiz based on Dynamic Form</h1>
+<button color="primary" mat-raised-button (click)="startQuiz()"  *ngIf="!start">Start</button>
+</form>
+ <app-dynamic-form [controlsData]="controlsData" *ngIf="start" [controlMode]="'single'"  (saveClick)="saveClick()" ></app-dynamic-form> 
+    <!-- <app-dynamic-form [controlsData]="controlsData" 
+    [controlMode]="'multiple'" [controlsToDisplay]=3 ></app-dynamic-form>  -->
+    <h2 *ngIf="finalScore"> Your Final Score is {{finalScore}}</h2>
+  </div>
+

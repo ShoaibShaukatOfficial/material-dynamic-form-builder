@@ -1,0 +1,13 @@
+<div>
+<form [formGroup]="form">
+    <div *ngFor="let controlsData of displayedcontrols" class="form-row">
+        <app-dynamic-controls [controlsData]="controlsData" [form]="form"></app-dynamic-controls>
+      </div>
+    <button color="primary" mat-raised-button (click)="back()" class="margin-5px" *ngIf="index>0">Back</button>
+      <button mat-raised-button color="primary" (click)="onSaveClick()" class="margin-5px" *ngIf="saveButtonVisibility()"
+        [disabled]="!form.valid">Save</button>
+      <button mat-raised-button color="primary" (click)="next()" class="margin-5px" *ngIf="nextButtonVisibility()"
+        [disabled]="!form.valid">Next</button>
+  </form>
+</div>
+

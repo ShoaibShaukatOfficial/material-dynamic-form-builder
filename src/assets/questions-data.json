@@ -1,0 +1,76 @@
+[
+    {
+    "key": "Q01",
+    "type":"radiobutton",
+    "label": "Which is the largest country in the world by population?",
+    "options": [
+                { "key": "germany", "value": "Germany" },
+                { "key": "usa", "value": "USA" },
+                { "key": "china", "value": "China" },
+                { "key": "russia", "value": "Russia" }
+            ],
+    "order": 1,
+    "required":true,
+    "answer":"china"
+},
+{
+    "key": "Q02",
+    "type":"radiobutton",
+    "label": "When did the second world war end?",
+    "options": [
+                { "key": "1945", "value": "1945" },
+                { "key": "1939", "value": "1939" },
+                { "key": "1944", "value": "1944" },
+                { "key": "1942", "value": "1942" }
+            ],
+    "order": 2,
+    "required":true,
+    "answer":"1945"
+},
+{
+    "key": "Q03",
+    "type":"radiobutton",
+    "label": "Which was the first country to issue paper currency?",
+    "options": [
+                { "key": "usa", "value": "USA" },
+                { "key": "france", "value": "France" },
+                { "key": "italy", "value": "Italy" },
+                { "key": "china", "value": "China" }
+            ],
+    "order": 3,
+    "required":true,
+    "answer":"china"
+},
+{
+    "key": "Q04",
+    "type":"radiobutton",
+    "label": "Which city hosted the 1996 Summer Olympics?",
+    "options": [
+                { "key": "atlanta", "value": "Atlanta" },
+                { "key": "sydney", "value": "Sydney" },
+                { "key": "athens", "value": "Athens" },
+                { "key": "beijing", "value": "Beijing" }
+            ],
+    "order": 4,
+    "required":true,
+    "answer":"atlanta"
+},
+{
+    "key": "Q05",
+    "type":"radiobutton",
+    "label": "Who invented telephone?",
+    "options": [
+                { "key": "alberteinstein", "value": "Albert Einstein" },
+                { "key": "alexandergrahambell", "value": "Alexander Graham Bell" },
+                { "key": "isaacnewton", "value": "Isaac Newton" },
+                { "key": "mariecurie", "value": "Marie Curie" }
+            ],
+    "order": 5,
+    "required":false,
+    "answer":"alexandergrahambell"
+}
+
+]
+
+
+

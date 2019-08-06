@@ -1,0 +1,95 @@
+<div [formGroup]="form">
+
+  <form class="example-form" [formGroup]="form">
+
+    <div [ngSwitch]="controlsData.controlType">
+
+      <!--- Material Input Control-->
+      <div *ngSwitchCase="'textbox'" class="control-width">
+        <mat-form-field>
+
+          <input matInput [formControlName]="controlsData.key" [placeholder]="controlsData.label"
+            [name]="controlsData.key" [type]="controlsData.inputtype">
+        </mat-form-field>
+      </div>
+
+      <!--- Material Text Area Control-->
+      <div *ngSwitchCase="'textarea'" class="control-width">
+        <mat-form-field>
+          <textarea matInput [formControlName]="controlsData.key" [placeholder]="controlsData.label"
+            [name]="controlsData.key"></textarea>
+        </mat-form-field>
+      </div>
+
+      <!--- Material DropDown Control-->
+      <div *ngSwitchCase="'dropdown'" class="control-width">
+        <mat-form-field>
+          <mat-select matInput [formControlName]="controlsData.key" [placeholder]="controlsData.label"
+            name="controlsData.key">
+            <mat-option *ngFor="let opt of controlsData.options" [value]="opt.key">
+              {{opt.value}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <!--- Material Radio Button Control-->
+      <div *ngSwitchCase="'radiobutton'">
+        <div class="question">
+        <h2><mat-label [attr.for]="controlsData.key" >{{controlsData.label}}</mat-label></h2>
+      </div>
+        <div class='choices'>
+          <mat-radio-group [formControlName]="controlsData.key">
+            <div [id]="controlsData.key" *ngFor="let opt of controlsData.options; let i = index">
+              <mat-radio-button [name]="controlsData.key" [value]="opt.key">{{opt.value}}</mat-radio-button>
+            </div>
+          </mat-radio-group>
+        </div>
+
+      </div>
+
+      <!--- Material CheckBox Control-->
+      <div *ngSwitchCase="'checkbox'" class='choices'>
+        <mat-label [attr.for]="controlsData.key">{{controlsData.label}}</mat-label>
+        <div [id]="controlsData.key" *ngFor="let opt of controlsData.options; let i = index">
+          <mat-checkbox [formControlName]="controlsData.key" [name]="controlsData.key" [value]="opt.key">{{opt.value}}
+          </mat-checkbox>
+        </div>
+      </div>
+
+      <!--- Material AutoComplete Control-->
+      <div *ngSwitchCase="'autocomplete'" class="control-width">
+        <mat-form-field>
+
+          <input type="text" matInput [formControlName]="controlsData.key" [placeholder]="controlsData.label"
+            [matAutocomplete]="auto">
+        </mat-form-field>
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of controlsData.options" [value]="option.key">{{option.value}}</mat-option>
+        </mat-autocomplete>
+      </div>
+
+      <!--- Material DatePicker Control-->
+      <div *ngSwitchCase="'datepicker'" class="control-width">
+        <mat-form-field class="example-full-width">
+          <input matInput [matDatepicker]="picker" [formControlName]="controlsData.key"
+            [placeholder]="controlsData.label">
+          <mat-datepicker-toggle matSuffix [for]="picker">
+            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <!--- Material Slider Control-->
+      <div *ngSwitchCase="'slider'">
+        <mat-slider></mat-slider>
+      </div>
+
+      <!--- Material Slide Toggle Control-->
+      <div *ngSwitchCase="'slideToggle'">
+        <mat-slide-toggle>Slide me!</mat-slide-toggle>
+      </div>
+    </div>
+  </form>
+</div>

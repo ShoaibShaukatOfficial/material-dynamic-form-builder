@@ -1,0 +1,25 @@
+.errorMessage{ color:red; font-size: 10px}
+.choices{    width: 300px;
+    text-align: left;
+    padding-left: 48%;}
+
+    .example-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .example-form > * {
+        width: 50%;
+    }
+    
+    .close{
+        width: 50%;
+    }
+    .control-width > *{
+        width: 50%
+    }
+    .question{
+        margin: 5px;
+    }
+   

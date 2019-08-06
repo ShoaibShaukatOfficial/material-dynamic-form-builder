@@ -1,0 +1,101 @@
+[
+    {
+    "key": "Q01",
+    "type":"textbox",
+    "inputtype":"text",
+    "label": "Name",
+    "order": 1,
+    "required":true
+},
+{
+    "key": "Q02",
+    "type":"textbox",
+    "inputtype":"tel",
+    "label": "Contact Number",
+    "order": 2,
+    "required":true
+},
+{
+    "key": "Q03",
+    "type":"textbox",
+    "inputtype":"email",
+    "label": "Email",
+    "order": 3,
+    "required":true
+},
+
+{
+    "key": "Q04",
+    "type":"textarea",
+    "label": "Professional Summary",
+    "order": 4,
+    "required":true
+},
+{
+    "key": "Q05",
+    "type":"radiobutton",
+    "label": "Gender",
+    "options": [
+                { "key": "male", "value": "Male" },
+                { "key": "female", "value": "Female" },
+                { "key": "other", "value": "Other" }
+            ],
+    "order": 5,
+    "required":true,
+    "answer":"china"
+},
+{
+    "key": "Q06",
+    "type":"dropdown",
+    "label": "Nationality",
+    "options": [
+                { "key": "pakistani", "value": "Pakistani" },
+                { "key": "turkish", "value": "Turkish" },
+                { "key": "chinese", "value": "Chinese" },
+                { "key": "american", "value": "American" }
+            ],
+    "order": 6,
+    "required":true,
+    "answer":"atlanta"
+},
+{
+    "key": "Q07",
+    "type":"autocomplete",
+    "label": "Residential Country",
+    "options": [
+                { "key": "pakistan", "value": "Pakistan" },
+                { "key": "turkey", "value": "Turey" },
+                { "key": "china", "value": "China" },
+                { "key": "USA", "value": "USA" }
+            ],
+    "order": 7,
+    "required":true,
+    "answer":"atlanta"
+},
+{
+    "key": "Q08",
+    "type":"checkbox",
+    "label": "Roles",
+    "options": [
+                { "key": "admin", "value": "Admin" },
+                { "key": "moderator", "value": "Moderator" },
+                { "key": "reader", "value": "Reader" }
+            ],
+    "order": 8,
+    "required":false,
+    "answer":"alexandergrahambell"
+},
+{
+    "key": "Q09",
+    "type":"datepicker",
+    "label": "Date of Birth",
+    
+    "order": 8,
+    "required":false,
+    "answer":"alexandergrahambell"
+}
+
+]
+
+
+
