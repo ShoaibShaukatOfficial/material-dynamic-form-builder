@@ -15,7 +15,7 @@ To run this project, install it locally using npm:
 npm install
 npm start
 
-update(If Needed) JSON file in asstes folder or create new JSON file below format
+update(If Needed) JSON file in assets folder or create new JSON file below format
 {
     "key": "Q01",
     "type":"radiobutton",
