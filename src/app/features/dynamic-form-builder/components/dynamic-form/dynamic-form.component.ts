@@ -44,6 +44,7 @@ export class DynamicFormComponent implements OnInit {
 
   }
   onSaveClick() {
+    this.preserveValues();
     this.saveClick.emit();
   }
   next() {
